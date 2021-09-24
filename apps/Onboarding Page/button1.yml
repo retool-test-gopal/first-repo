@@ -1,0 +1,33 @@
+id: button1
+type: widget
+subtype: ButtonWidget2
+resourceName: null
+template:
+  ordered:
+    - iconAfter: ''
+    - hidden: false
+    - text: Say hi!
+    - tooltipText: ''
+    - styleVariant: solid
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: query1
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - disabled: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 0.6
+    col: 5
+    height: 1
+    width: 3
+createdAt: 2021-09-23T22:35:15.839Z
